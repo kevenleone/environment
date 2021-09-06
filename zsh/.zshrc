@@ -13,9 +13,9 @@ export JPDA_ADDRESS=8000
 export JPDA_TRANSPORT=dt_socket
 
 # Java
-export ANT_OPTS="-Xmx4096m -Xms4096m -XX:MaxPermSize=1024m -XX:-UseGCOverheadLimit -Dorg.gradle.workers.max=4"
-export GRADLE_OPTS="-Dorg.gradle.workers.max=4"
-export JAVA_OPTS="-Xmx4096m -Xms1024m -XX:PermSize=512m"
+export ANT_OPTS="-Xmx10240m"
+export GRADLE_OPTS="-Xmx10240m"
+# export JAVA_OPTS="-Xmx4096m -Xms1024m -XX:PermSize=512m"
 # export JAVA_OPTS="-Xmx4096m -Xms1024m -XX:MaxPermSize=512m"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home"
 export PATH="$PATH:$HOME/Library/PackageManager/bin"
