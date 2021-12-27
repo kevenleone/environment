@@ -15,7 +15,6 @@
 // limitations under the License.
 
 (async () => {
-
   let username = await question('What is your GitHub username? ')
   let token = await question('Do you have GitHub token in env? ', {
     choices: Object.keys(process.env)
