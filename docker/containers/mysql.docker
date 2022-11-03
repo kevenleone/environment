@@ -2,3 +2,8 @@ docker run --name mysql-latest  \
 -p 3306:3306 -p 33060:33060  \
 -e MYSQL_ROOT_HOST='%' -e MYSQL_ROOT_PASSWORD='strongpassword'   \
 -d mysql/mysql-server:latest
+
+ docker run --name mysql  \                                                                                                                                                 10:14:48
+-p 3306:3306 -p 33060:33060  \
+-e MYSQL_ROOT_HOST='%' -e MYSQL_ROOT_PASSWORD='root'   \
+-d --restart always mysql/mysql-server:5.6
